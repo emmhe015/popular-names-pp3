@@ -18,6 +18,7 @@ def get_names_data(names_list):
     Args:
     - names_list: List of names to choose from.
     """
+   while True:
     print("Please enter the name you would like to know more about.")
     print("The available names are:", ", ".join(names_list) + ".")
     print("Enter one name at a time.\n")
@@ -27,6 +28,7 @@ def get_names_data(names_list):
     # Check if the entered name is valid
     if data_str in names_list:
         print(f"Data available for {data_str}: <placeholder data>")
+        break
     else:
         print("Invalid name. Please choose a name from the provided list.")
 
