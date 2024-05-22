@@ -23,7 +23,7 @@ def get_names_data(names_list):
         print("The available names are:", ", ".join(names_list) + ".")
         print("Enter one name at a time.\n")
 
-        data_str = input("Enter the name you have chosen here, if you would like to stop please enter Stop: ")
+        data_str = input("Enter the name you have chosen here, if you would like to stop please enter Stop:\n")
 
         if data_str in names_list:
             print(f"Data available for {data_str}: ")
